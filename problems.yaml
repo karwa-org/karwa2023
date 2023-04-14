@@ -22,7 +22,7 @@
   label: E
   name: En Retard
   rgb: '#000000'
-  time_limit: 4.0
+  time_limit: 7.0
 - id: navettes
   label: F
   name: Navettes
