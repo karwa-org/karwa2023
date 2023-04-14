@@ -2,3 +2,8 @@ contest.pdf
 contest-web.pdf
 solutions.pdf
 solutions-web.pdf
+*.aux
+*.fdb_latexmk
+*.fls
+*.log
+*.aux
