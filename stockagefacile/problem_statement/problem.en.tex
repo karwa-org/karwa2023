@@ -4,18 +4,22 @@
 % Source: URL to image.
 
 % optionally define variables/limits for this problem
-\newcommand{\maxa}{123456789}
+Pour se désaltérer après le concours, l'équipe organisatrice a prévu un grand
+nombre de boissons alcoolisées stockées dans un grand frigo de $n$ emplacements
+de long et deux emplacements de haut.  Vous pouvez stocker chaque boisson de
+deux facons: soit verticalement, et elle prend ainsi un emplacement de long sur
+deux emplacement de haut, soit horizontalement, et elle prend ainsi deux
+emplacements de long sur un emplacement de haut. De combien de manières
+différentes est-il possible de rempli le frigo ? 
 
-Given the area $a$ of a square, calculate its perimeter.
+Attention, la reponse peut être très grande. Nous vous demandons donc d'output
+la réponse modulo 1000000007.
 
 \begin{Input}
-    The input consists of:
-    \begin{itemize}
-        \item One line with an integer $a$ ($0\leq a\leq \maxa$), the area of the square.
-    \end{itemize}
+    Vous recevrez 1 ligne avec un entier $n$ tel que $1 <= n <= 10^6$.   
 \end{Input}
 
 \begin{Output}
-    Output the perimeter of the square with area $a$.
-    Your answer should have an absolute or relative error of at most $10^{-6}$.
+    Vous devez afficher le nombre de façons de stocker des boissons dans le frigo
+modulo 1000000007.
 \end{Output}
