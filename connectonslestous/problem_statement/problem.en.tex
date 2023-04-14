@@ -11,19 +11,19 @@ Il y a $n$ karaokés numérotés de $1$ à $n$ et $m$ liaisons bidirectionnelles
 Chaque liaison a un poids $w$ représentant la distance entre les deux karaokés reliés.
 L'objectif est de relier tous les karaokés entre eux tout en minimisant le coût (distance) total de toutes les liaisons.
 
-Cependant, les petites liaisons (avec un petit poids) sont chères, elle souhaite donc maximiser le poids de l'arête minimale de sorte que le coût (la distance) total des liaisons soit inférieur à $125\%$ du coût (de la distance) minimal pour relier tous les karaokés.
+Cependant, les petites liaisons (avec un petit poids) sont chères, la SNCB souhaite donc maximiser le poids de l'arête minimale de sorte que le coût (la distance) total des liaisons soit inférieur à $125\%$ du coût (de la distance) minimal pour relier tous les karaokés.
 Autrement dit, le coût total des liaisons doit être inférieur ou égal à $1.25$ fois le coût minimum pour que le projet soit viable.
 
 Il est garanti qu'il est possible de relier tous les karaokés entre eux.
 
 \begin{Input}
-	The input consists of:
+	Les entrées consiste de :
 	\begin{itemize}
 		\item Une ligne avec 2 entiers $2 \le n \le 10^5$ et $1 \le m \le 2 \times 10^5$, représentant respectivement le nombre de karaokés et le nombre de liaisons entre deux karaokés.
-		\item $m$ lignes avec trois entiers $u$ et $v$, $w$, représentant une liaison bidirectionnelle entre deux karaokés. $1 \le w \le 10^9$.
+		\item $m$ lignes avec trois entiers  $1 \le u \le n$ et $1 \le v \le n$, $1 \le w \le 10^9$, représentant une liaison bidirectionnelle entre deux karaokés.
 	\end{itemize}
 \end{Input}
 
 \begin{Output}
-	Un entier représentant le poids de l'arête minimale pour avoir un coût inférieur à $125\%$ du coût de base.
+	Un entier K représentant le poids de l'arête minimale du réseaux connectant les karaokés avec un coût inférieur à $125\%$ du coût de base.
 \end{Output}
