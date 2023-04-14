@@ -1,0 +1,31 @@
+# CCS fields:
+# OLD: https://ccs-specs.icpc.io/ccs_system_requirements?#contestyaml
+# NEW: https://ccs-specs.icpc.io/contest_archive_format#contest-object
+# Commented values are defaults
+id:                         karwa2023
+name:                       KARWa 2023
+#formal_name:                KARWa 2023
+start_time:                 2023-01-01T12:00:00Z
+duration:                   2:30:00
+scoreboard_freeze_duration: 1:00:00
+penalty_time:               10
+
+# Latex fields:
+title: KARWa 2023
+subtitle: Konkours d'algorithmique régionale Wallone
+year: 2023
+author: The KARWa 2023 jury
+testsession: False
+blank_page_text:
+print_timelimit: true
+
+# problem.yaml defaults
+source_url: 
+license: mit
+rights_owner: Louvain-li-Nux && CPUMons
+
+# CCS fields for integration
+# URL endpoint of the CCS, e.g. https://www.domjudge.org/demoweb.
+#api:
+# Contest ID in the CCS; only needed in case of multiple active contests.
+#contest_id:

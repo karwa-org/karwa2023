@@ -1,0 +1,21 @@
+- id: allumettes
+  label: A
+  name: Allumettes
+  rgb: '#000000'
+  time_limit: 1.0
+- id: bonheur
+  label: B
+  name: Bonheur
+  rgb: '#000000'
+  time_limit: 1.0
+- id: connectonslestous
+  label: C
+  name: connectonsLesTous
+  rgb: '#000000'
+  time_limit: 7.0
+- id: enretard
+  label: D
+  name: En retard
+  rgb: '#000000'
+  time_limit: 4.0
+
