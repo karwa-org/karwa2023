@@ -1,10 +1,19 @@
 \begin{frame}
     \frametitle{\problemtitle}
     \begin{itemize}
-        % TODO: Remove this comment when you're done writing the solutions.
-        \item<+-> \textbf{Problem:} Print $4\sqrt n$ with sufficiently many digits.
-        \item<+-> Naive solution: do something stupid. $\mathcal O(2^n)$ is too slow!
-        \item<+-> Instead, just compute the answer. $\mathcal O(1)$.
+        \item<+-> \textbf{Problem:} 2SUM, la somme de 2 éléments d'une liste égale K
+        \item<+-> Solution Naive: Essayer toutes les paires d'éléments dans la liste $\mathcal O(n^2)$ C'est trop lent!
+        \item<+-> 2 approches
+        \item<+-> Hashset, iterer sur la liste a
+        \begin{itemize}
+            \item<+-> caluler $t = k - a_i$ $\mathcal O(n)$
+            \item<+-> t dans le Hashset ? 
+            \begin{itemize}
+                \item si oui, bingo !
+                \item Sinon ajouter $a_i$ au Hashset
+            \end{itemize}
+        \end{itemize}
+        \item<+-> 2 pointeurs, cat la liste est déja trié ! $\mathcal O(n)$
     \end{itemize}
     % \solvestats
 \end{frame}

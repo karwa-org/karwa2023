@@ -12,7 +12,7 @@
   label: C
   name: connectonsLesTous
   rgb: '#000000'
-  time_limit: 7.0
+  time_limit: 6.0
 - id: enretard
   label: D
   name: En retard
