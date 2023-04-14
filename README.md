@@ -14,5 +14,5 @@ bt run
 
 This will create a `contest.pdf` document, with the full problemset.
 
-If you don't want to figure out what LaTeX's cryptic error messages mean, you can install the `texlive-full` metapackages on most Linux distros.
+If you don't want to figure out what LaTeX's cryptic error messages mean, you can install the `texlive-full` metapackage on most Linux distros.
 This should fix most problems you may have!
