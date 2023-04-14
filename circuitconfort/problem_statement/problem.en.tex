@@ -1,0 +1,21 @@
+\problemname{\problemyamlname}
+
+Un débat a éclaté entre les étudiants de l'UMONS et de l'ULC, ils ne parviennent pas à se mettre d'accord sur la meilleur des deux universités, surtout dans le domaine scientifique. Nous avons besoin de votre aide pour les départager et ainsi avantager votre université au sujet d'un tout nouveau métal appelé "palindronium".
+
+Votre mission est d'optimiser la production de palindronium dans votre université, production pour l'instant très coûteuse. Pour l'optimiser, le métal doit être fabriqué dans un moule d'une forme d'un triangle rectangle dont la longueur de l'hypothénuse est un nombre entier et un palindrome. Par souci d'espace, vous ne pouvez modéliser qu'un seul moule et celui-ci doit pouvoir rentrer dans un carré de taille $n\times n$, il doit ainsi avoir une aire maximale.
+
+Un nombre entier palindrome est un nombre qui ne change pas s'il est lu de gauche à droite ou de droite à gauche, chiffre par chiffre. Par exemple $191$ est un nombre palindrome, mais $155$ ne l'est pas. Ainsi, si le carré dans lequel votre moule doit rentrer a une taille de $15\times 15$, vous pouvez faire un moule de taille $(3,4,5)$ qui forme bien un triangle rectangle dont la longueur de l'hypothésuse, $5$, est un palindrome et l'aire de ce moule sera $6$. Votre but est d'avoir la plus grande aire possible sous ces contraintes !
+
+\begin{Input}
+    L'input consiste en
+    \begin{itemize}
+        \item Une ligne avec un entier $n$ ($3\leq n\leq 10^3$), le nombre de chemin que Mr. Karwa et son équipe doivent emprunter.
+        \item Une ligne avec un nom de gare, là d'où doivent partir Mr. Karwa et son équipe.
+        \item $n$ lignes contenant une ligne à emprunter entre deux gares, c'est-à-dire deux chaînes de caractères séparées par un espace \texttt{gare1 gare2}.
+    \end{itemize}
+    Les noms de gares sont donnés en lettre alphabétique minuscules. Une ligne de train entre deux gares ne sera donnée qu'une seule fois et agit comme une ligne à double sens.
+\end{Input}
+
+\begin{Output}
+    S'il est impossible pour Mr. Karwa et son équipe de visiter exactement une fois chaque ligne donnée, donnez en output ``\texttt{impossible}'', sinon donnez ``\texttt{ok}''.
+\end{Output}
