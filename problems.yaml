@@ -18,4 +18,13 @@
   name: En retard
   rgb: '#000000'
   time_limit: 4.0
-
+- id: labyrinthe
+  label: E
+  name: Labyrinthe
+  rgb: '#000000'
+  time_limit: 2.0
+- id: navettes
+  label: F
+  name: Navettes
+  rgb: '#000000'
+  time_limit: 1.0
