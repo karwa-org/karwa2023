@@ -5,20 +5,22 @@
 
 % optionally define variables/limits for this problem
 
-Jérôme et ses deux coéquipiers doivent se rendre aux KARWa à l'UMons. Malheureusement, ils se sont trompés d'université et ont atterri à l'UCLouvain !
-Ils sont pressés par le temps et ont à leur disposition une carte avec N intersections et M liaisons bidirectionnelles, ayant chacune un poids W.
+Jérôme et ses deux coéquipiers doivent se rendre aux KARWa à l'UMons.
+Malheureusement, ils se sont trompés d'université et ont atterri à l'UCLouvain !
+Ils sont pressés par le temps et ont à leur disposition une carte avec $n$ intersections et $m$ liaisons bidirectionnelles, ayant chacune un poids $w$.
 Pouvez-vous déterminer s'ils auront le temps d'arriver à l'heure ?
 
-L'UCLouvain est représentée par l'intersection 1 et l'UMons par l'intersection N. Un chemin est garanti entre les deux universités.
+L'UCLouvain est représentée par l'intersection $1$ et l'UMons par l'intersection $n$.
+Un chemin est garanti entre les deux universités.
 
 \begin{Input}
-    L'entrée consiste :
-    \begin{itemize}
-        \item Deux entiers N et M ($2 <= N, M <= 10^6$), où N est le nombre d'intersections.
-        \item  M lignes contenant chacune 3 entiers u, v et w, représentant une liaison bidirectionnelle entre 1 <= u <= N et 1 <= v <= N, avec un poids $1 <= w <= 10^6$.
-    \end{itemize}
+	L'entrée consiste :
+	\begin{itemize}
+		\item Deux entiers $n$ et $m$ ($2 \le n, m \le 10^6$), où $n$ est le nombre d'intersections.
+		\item $m$ lignes contenant chacune 3 entiers $u$, $v$, et $w$, représentant une liaison bidirectionnelle entre $1 \le u \le n$ et $1 \le v \le n$, avec un poids $1 \le w \le 10^6$.
+	\end{itemize}
 \end{Input}
 
 \begin{Output}
-    Une ligne contenant un entier L, la longueur du plus court chemin entre 1 et N.
+	Une ligne contenant la longueur du plus court chemin entre $1$ et $n$.
 \end{Output}

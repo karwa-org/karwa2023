@@ -6,18 +6,17 @@
 % optionally define variables/limits for this problem
 \newcommand{\maxa}{123456789}
 
-Alexis recherche deux coéquipiers pour participer au karwa. Il dispose d'une liste de N personnes sans équipe, triées par une identifiant unique. 
-Alexis possède un nombre porte-bonheur K et il souhaite savoir s'il est possible de trouver deux coéquipiers dont la somme des identifiants est égale à K.
-
+Alexis recherche deux coéquipiers pour participer au karwa. Il dispose d'une liste de $n$ personnes sans équipe, triées par une identifiant unique.
+Alexis possède un nombre porte-bonheur $k$ et il souhaite savoir s'il est possible de trouver deux coéquipiers dont la somme des identifiants est égale à $k$.
 
 \begin{Input}
-    The input consists of:
-    \begin{itemize}
-        \item La première ligne contient deux entiers : N $(2 <= N <= 1^6)$ représentant le nombre de personnes seules, et K $(2 <= K <= 1^9)$ représentant le nombre porte-bonheur d'Alexis.
-        \item La seconde ligne contient N entiers $x_1, x_2, \dots, x_N$b $(1 <= x_i < K)$ en ordre croissant, représentant les identifiants des personnes sans équipe.
-    \end{itemize}
+	The input consists of:
+	\begin{itemize}
+		 \item La première ligne contient deux entiers : $n$ ($2 \le n \le 1^6$) représentant le nombre de personnes seules, et $k$ ($2 \le k \le 1^9$) représentant le nombre porte-bonheur d'Alexis.
+		\item La seconde ligne contient $n$ entiers $x_1, x_2, \dots, x_N$ ($1 \le x_i < k$) en ordre croissant, représentant les identifiants des personnes sans équipe.
+	\end{itemize}
 \end{Input}
 
 \begin{Output}
-    Si Alexis peut trouver deux coéquipiers dont la somme des identifiants est égale à K, le programme doit afficher "yes". Sinon, il doit afficher "no".
+	Si Alexis peut trouver deux coéquipiers dont la somme des identifiants est égale à $k$, le programme doit afficher ``\verb|yes|'', Sinon, il doit afficher ``\verb|no|''.
 \end{Output}
