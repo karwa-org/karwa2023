@@ -7,7 +7,7 @@
   label: B
   name: Bonheur
   rgb: '#000000'
-  time_limit: 1.0
+  time_limit: 2.0
 - id: connectonslestous
   label: C
   name: connectonsLesTous
