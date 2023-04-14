@@ -28,3 +28,13 @@
   name: Navettes
   rgb: '#000000'
   time_limit: 1.0
+- id: stockagefacile
+  label: G
+  name: Stockage facile
+  rgb: '#000000'
+  time_limit: 1.0
+- id: stockagedifficile
+  label: H
+  name: Stockage difficile
+  rgb: '#000000'
+  time_limit: 1.0
