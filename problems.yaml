@@ -28,14 +28,14 @@
   name: Navettes
   rgb: '#000000'
   time_limit: 1.0
+- id: horizoncomplexe
+  label: H
+  name: Horizon Complexe
+  rgb: '#000000'
+  time_limit: 1.0
 - id: stockagefacile
   label: G
   name: Stockage Facile
-  rgb: '#000000'
-  time_limit: 1.0
-- id: stockagedifficile
-  label: H
-  name: Stockage Difficile
   rgb: '#000000'
   time_limit: 1.0
 - id: palindronium
@@ -46,5 +46,10 @@
 - id: miroirmagique
   label: J
   name: Miroir Magique
+  rgb: '#000000'
+  time_limit: 1.0
+- id: stockagedifficile
+  label: K
+  name: Stockage Difficile
   rgb: '#000000'
   time_limit: 1.0
