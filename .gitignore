@@ -7,3 +7,5 @@ solutions-web.pdf
 *.fls
 *.log
 *.aux
+solution_footer.tex
+solution_header.tex
