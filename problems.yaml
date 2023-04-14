@@ -10,19 +10,19 @@
   time_limit: 2.0
 - id: connectonslestous
   label: C
-  name: connectonsLesTous
+  name: connectons Les Tous
   rgb: '#000000'
   time_limit: 6.0
-- id: enretard
-  label: D
-  name: En retard
-  rgb: '#000000'
-  time_limit: 4.0
 - id: labyrinthe
-  label: E
+  label: D
   name: Labyrinthe
   rgb: '#000000'
   time_limit: 2.0
+- id: enretard
+  label: E
+  name: En Retard
+  rgb: '#000000'
+  time_limit: 4.0
 - id: navettes
   label: F
   name: Navettes
@@ -30,11 +30,21 @@
   time_limit: 1.0
 - id: stockagefacile
   label: G
-  name: Stockage facile
+  name: Stockage Facile
   rgb: '#000000'
   time_limit: 1.0
 - id: stockagedifficile
   label: H
-  name: Stockage difficile
+  name: Stockage Difficile
+  rgb: '#000000'
+  time_limit: 1.0
+- id: palindronium
+  label: I
+  name: Palindronium Pythagoricien
+  rgb: '#000000'
+  time_limit: 1.0
+- id: miroirmagique
+  label: J
+  name: Miroir Magique
   rgb: '#000000'
   time_limit: 1.0
