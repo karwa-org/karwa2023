@@ -1,4 +1,9 @@
-#include <bits/stdc++.h>
+#include <algorithm>
+#include <climits>
+#include <iostream>
+#include <tuple>
+#include <vector>
+
 #define int long long
 using namespace std;
 
@@ -6,8 +11,8 @@ bool comp(tuple<int,int,int> t1, tuple<int,int,int> t2) {
     return get<2>(t1) < get<2>(t2);
 }
 
-vector<int> parents;
-vector<int> ranks;
+static vector<int> parents;
+static vector<int> ranks;
 
 int find(int x) {
     if (parents[x] == x) return x;
@@ -39,13 +44,15 @@ int kruskal(vector<tuple<int,int,int>> edges, int n, int alpha) {
     ranks.resize(n, 0);
     int cost = 0;
     int comp = 0;
-    for (auto [u,v,w] : edges) {
+    for (auto edge : edges) {
+        int u, v, w; // structured bindings are a C++17 feature
+		  tie(u, v, w) = edge;
         if (w >= alpha && find(u) != find(v)) {
             union_(u,v); cost += w;
             comp++;
         }
     }
-    return comp + 1 == n ? cost : LONG_LONG_MAX;
+    return comp + 1 == n ? cost : LLONG_MAX;
 }
 
 signed main() {
@@ -63,7 +70,8 @@ signed main() {
     int best = kruskal(edges, n, 0);
     int acceptable = (int) (((double) best) *1.25);
     int ans = 1;
-    for (auto [_, __, w] : edges) {
+    for (auto edge : edges) {
+        int w = get<2>(edge); // structured bindings are a C++17 feature
         int res = kruskal(edges, n, w);
         if (res <= acceptable) {
             ans = w;
