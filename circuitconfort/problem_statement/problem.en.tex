@@ -2,22 +2,23 @@
 
 Bertrand Karwa et son équipe de Sécurail sont réhabilités temporairement pour gérer la sécurité de plusieurs
 lignes ferroviaires belges. Ils reçoivent une liste de lignes entre deux gares à emprunter, ils doivent passer au moins
-une fois sur chaque ligne afin de montrer aux voyageurs que "le vol, ce n'est pas typique de la Belgique" et les rassurer.
+une fois sur chaque ligne afin de montrer aux voyageurs que ``le vol, ce n'est pas typique de la Belgique'' et les rassurer.
 
 Ils souhaitent optimiser leur chemin afin d'emprunter chaque ligne de train exactement une fois, indépendamment du sens dans lequel il la prenne, mais ils ne sont pas sûrs
 de la faisabilité de la tâche. Aidez-les à déterminer s'il leur est possible de passer une et une seule fois sur chaque ligne de train, sachant qu'ils démarrent à une
 gare donnée et qu'ils souhaitent revenir sur cette gare à la fin de leur parcours.
 
 \begin{Input}
-    L'input consiste en
-    \begin{itemize}
-        \item une ligne avec un entier $n$ ($3\leq n\leq 10^3$), le nombre de chemin que Mr. Karwa et son équipe doivent emprunter,
-        \item une ligne avec un nom de gare, là d'où doivent partir Mr. Karwa et son équipe,
-        \item $n$ lignes contenant une ligne à emprunter entre deux gares, c'est-à-dire deux chaînes de caractères séparées par un espace \texttt{gare1 gare2}.
-    \end{itemize}
-    Les noms de gares sont donnés en lettre alphabétique minuscules. Une ligne de train entre deux gares ne sera donnée qu'une seule fois et agit comme une ligne à double sens.
+	L'entrée consiste de :
+	\begin{itemize}
+		\item Une ligne avec un entier $n$ ($3 \le n \le 10^3$), le nombre de chemin que Mr. Karwa et son équipe doivent emprunter.
+		\item Une ligne avec un nom de gare, là d'où doivent partir Mr. Karwa et son équipe.
+		\item $n$ lignes contenant une ligne à emprunter entre deux gares, c'est-à-dire deux chaînes de caractères séparées par un espace ``\verb|gare1 gare2|''.
+	\end{itemize}
+	Les noms de gares sont donnés en lettre alphabétique minuscules.
+	Une ligne de train entre deux gares ne sera donnée qu'une seule fois et agit comme une ligne à double sens.
 \end{Input}
 
 \begin{Output}
-    S'il est impossible pour Mr. Karwa et son équipe de visiter exactement une fois chaque ligne donnée, donnez en output ``\texttt{impossible}'', sinon donnez ``\texttt{ok}''.
+	S'il est impossible pour Mr. Karwa et son équipe de visiter exactement une fois chaque ligne donnée, donnez en sortie ``\verb|impossible|'', sinon donnez ``\verb|ok|''.
 \end{Output}
