@@ -26,6 +26,6 @@ rights_owner: Louvain-li-Nux && CPUMons
 
 # CCS fields for integration
 # URL endpoint of the CCS, e.g. https://www.domjudge.org/demoweb.
-#api:
+api: https;//domjudje.kapucl.be
 # Contest ID in the CCS; only needed in case of multiple active contests.
 #contest_id:
