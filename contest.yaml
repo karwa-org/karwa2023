@@ -5,7 +5,7 @@
 id:                         karwa2023
 name:                       KARWa 2023
 #formal_name:                KARWa 2023
-start_time:                 2023-01-01T12:00:00Z
+start_time:                 2023-04-18T19:30:00Z
 duration:                   2:30:00
 scoreboard_freeze_duration: 1:00:00
 penalty_time:               10
@@ -26,6 +26,6 @@ rights_owner: Louvain-li-Nux && CPUMons
 
 # CCS fields for integration
 # URL endpoint of the CCS, e.g. https://www.domjudge.org/demoweb.
-api: https;//domjudje.kapucl.be
+api: https://domjudge.kapucl.be
 # Contest ID in the CCS; only needed in case of multiple active contests.
 #contest_id:
