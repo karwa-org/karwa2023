@@ -1,0 +1,12 @@
+name: bt-check
+run-name: Checking changes from ${{ github.actor }}
+on: [push]
+jobs:
+  check-bats-version:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - run: pip install pyyaml colorama argcomplete
+      - run: apt install texlive-bin texlive-extra
+      - run: git clone https://github.com/karwa-org/bapctools --depth 1 --branch master
+      - run: bapctools/bin/tools.py pdf
