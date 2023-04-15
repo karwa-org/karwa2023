@@ -6,7 +6,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - run: pip install pyyaml colorama argcomplete
-      - run: apt install texlive-bin texlive-extra
+      - run: pip install --user pyyaml colorama argcomplete
+      - run: sudo apt install -y texlive-bin texlive-extra
       - run: git clone https://github.com/karwa-org/bapctools --depth 1 --branch master
       - run: bapctools/bin/tools.py pdf
