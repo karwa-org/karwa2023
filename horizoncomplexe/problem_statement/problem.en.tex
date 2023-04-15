@@ -19,12 +19,23 @@ Pour chaque emplacement de 1 mètre de large, le plan vous donne la hauteur du b
   \draw[ultra thick](2,5) -- (2, 7);
   \draw[ultra thick](2, 7) -- (4, 7);
   \draw[ultra thick](4,7) -- (4, 0);
-  \draw[ultra thick](4, 0) -- (8, 0);
   \draw[ultra thick](8,0) -- (8, 2);
   \draw[ultra thick](8, 2) -- (9, 2);
   \draw[ultra thick](9, 2) -- (9, 3);
   \draw[ultra thick] (9, 3) -- (10, 3);
   \draw[ultra thick] (10, 3) -- (10, 0);
+
+  \draw[red, ultra thin] (0,0) -- (0, 5);
+  \draw[red, ultra thin] (0, 5) -- (2, 5);
+  \draw[red, ultra thin](2,5) -- (2, 7);
+  \draw[red, ultra thin](2, 7) -- (4, 7);
+  \draw[red, ultra thin](4,7) -- (4, 0);
+  \draw[red, ultra thin](4, 0) -- (8, 0);
+  \draw[red, ultra thin](8,0) -- (8, 2);
+  \draw[red, ultra thin](8, 2) -- (9, 2);
+  \draw[red, ultra thin](9, 2) -- (9, 3);
+  \draw[red, ultra thin] (9, 3) -- (10, 3);
+  \draw[red, ultra thin] (10, 3) -- (10, 0);
     \foreach \x in {1, ..., 10} {%
       % Bottom
       \node[anchor=north] at (\x-0.5,0) {\x};
@@ -36,7 +47,7 @@ Pour chaque emplacement de 1 mètre de large, le plan vous donne la hauteur du b
     }
 \end{tikzpicture}
 \newline
-\textit{Illustration de l'exemple 1}
+\textit{Illustration de l'exemple 1 \\ En rouge, là oú la ville souhaite poser des panneaux sur les batiments.}
 \end{figure}
 
 \begin{Input}
@@ -50,3 +61,8 @@ Pour chaque emplacement de 1 mètre de large, le plan vous donne la hauteur du b
 \begin{Output}
 	Un entier représentant le nombre de mètre de panneaux nécessaire afin de recouvrir la totalité des côtés et dessus des bâtiments.
 \end{Output}
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:
