@@ -1,12 +1,11 @@
 \begin{frame}
     \frametitle{\problemtitle}
     \begin{itemize}
-        % TODO: Remove this comment when you're done writing the solutions.
-        \item<+-> \textbf{Problem:} Optimiser l'aire d'un triangle rectangle $(a,b,c)$ en conservant le même périmètre
-        \item<+-> $\Rightarrowa a=b$, triangle isocèle.
-        \item<+-> Si on ignore la contrainte d'entier palindromique sur $c$, le plus grand rectangle possible est $(n,n,n*\sqrt{2})$.
-        \item<+-> Avec la contrainte, $c$ va de $floor(n*sqrt(2))$ à $0$ : prendre le premier palindrome rencontré et afficher l'aire.
-        \item<+-> Pour l'hypothénuse connue $c$, un autre côté est de longueur $c/sqrt(2)$ donc l'aire est donnée par $\frac{1}{2}\cdot(\frac{c}{\sqrt{2}})^2 = \frac{c^2}{4}$.
+        \item<+-> \textbf{Problème:} Optimiser l'aire d'un triangle rectangle $(a,b,c)$ en conservant le même périmètre
+        \item<+-> Pour l'hypoténuse $c$ fixée, l'aire est maximale si $a=b$ (simple problème d'optimisation par dérivation).
+        \item<+-> Si on ignore la contrainte d'entier palindromique sur $c$, le plus grand rectangle possible est $(n,n,n\sqrt{2})$ qui prend la moitié du carré $n\times n$.
+        \item<+-> Avec la contrainte, on itière avec $c$ de $\lfloor n\sqrt{2} \rfloor$ à $0$ : prendre le premier palindrome rencontré et afficher l'aire.
+        \item<+-> Pour l'hypoténuse connue $c$, un autre côté est de longueur $c/\sqrt{2}$ donc l'aire est donnée par \[\frac{1}{2}\cdot\left(\frac{c}{\sqrt{2}}\right)^2 = \frac{c^2}{4}.\]
 %Attention à bien stopper la boucle dès qu'on trouve un palindrome. Aussi, on doit bien arrondir à l'inférieure et pas round ni ceil(n*sqrt(2)), ça casse si c'est un palindrome.
 
     \end{itemize}
