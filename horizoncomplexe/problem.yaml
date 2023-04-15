@@ -1,10 +1,11 @@
-name: Horizon
+name: Horizon Complexe
 author: Virgil Surin
 # Contest name and year
 source: KARWa 2023
 # contest.region.eu
 source_url: 
 license: mit
+keywords: karwa1
 rights_owner: Louvain-li-Nux && CPUMons
 # 'default', 'custom', or 'custom interactive'
 validation: default

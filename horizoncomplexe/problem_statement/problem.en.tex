@@ -1,11 +1,12 @@
 \problemname{\problemyamlname}
-\usepackage{tikz}
-La grande ville de Karwa-sur-mer souhaite moderniser les buildings présent sur la digue. En effet la ville veut poser des panneaux solaires sur ceux-ci et afin de profiter un maximum de la production électrique de ceux-ci, elle décide de recouvrir bien évidemment les toits des batiments et les facades de côtés. L'idée étant de profiter du soleil du matin au soir.
 
+La grande ville de Karwa-sur-mer souhaite moderniser les buildings présent sur la digue.
+En effet, la ville veut poser des panneaux solaires sur ceux-ci et, afin de profiter un maximum de la production électrique de ceux-ci, elle décide de recouvrir bien évidemment les toits des bâtiments et les facades de côtés.
 
-Pour cela vous êtes engagé afin de déterminer combien de mètres de panneaux la ville aura besoin pour équiper ses batiments. La ville vous donne pour cela un plan en vue de face de la digue vous spécifiant la taille des bâtiments comme ceci : \\
+Pour cela vous êtes engagé afin de déterminer combien de mètres de panneaux la ville aura besoin pour équiper ses bâtiments.
+La ville vous donne pour cela un plan en vue de face de la digue vous spécifiant la taille des bâtiments comme ceci :
 
-Pour chaque emplacement de 1 mètre de large, le plan vous donne la hauteur du batiments à cet emplacement comme illustré par la figure ci-dessous.
+Pour chaque emplacement de 1 mètre de large, le plan vous donne la hauteur du bâtiment à cet emplacement comme illustré par la figure ci-dessous.
 
 \begin{figure}[h]
 \centering
@@ -38,11 +39,14 @@ Pour chaque emplacement de 1 mètre de large, le plan vous donne la hauteur du b
 \textit{Illustration de l'exemple 1}
 \end{figure}
 
+\begin{Input}
+	L'entrée consiste de :
+	\begin{itemize}
+		\item La première contient un entier $n$ ($1 \le n \le 10^4$), la longueur en metres de la digue.
+		\item La seconde ligne représente la ligne d'horizon composée de $n$ entiers $h_i$ ($0 \le h_i \le 100$) séparés d'un espace représentant la hauteur du bâtiment en position $i$.
+	\end{itemize}
+\end{Input}
 
-\section*{Inputs}
-Vous recevrez 2 lignes :
-La première contient un entier $n$ tel que $1 \leq n \leq 10 000$, la longueur en metre de la digue.
-La seconde ligne représente la ligne d'horizon composé de $n$ entiers $h_{i}$ séparé d'un espace représentant la hauteur du batiment en position $i$. Notez que $0 \leq h_{i} \leq 100$
-
-\section*{Output}
-Vous devez afficher un seul entier représentant le nombre de mètre de panneaux nécessaire afin de recouvrir la totalité des côtés et dessus des batiments.
+\begin{Output}
+	Un entier représentant le nombre de mètre de panneaux nécessaire afin de recouvrir la totalité des côtés et dessus des bâtiments.
+\end{Output}
