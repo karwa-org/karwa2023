@@ -2,8 +2,28 @@
     \frametitle{\problemtitle}
     \begin{itemize}
         % TODO: Remove this comment when you're done writing the solutions.
-        \item<+-> \textbf{Problem:} todo (naïf marche pas, trop long, besoin d'un DP en parcourant ligne par ligne)
-        \item<+-> todo
+        \item<+-> \textbf{Problème:} Étant donné une matrice booléenne (1 : responsable, 0 : candidats), trouver la plus grande sous-matrice ne contenant que des 1.
+        \item<+-> Un algorithme naïf qui itère sur toutes les sous-matrices est en $\mathcal{O}(n^2m^2)$, trop long.
+        \item<+-> On peut s'en sortir en $\mathcal{O}(nm)$ avec un seul parcours de la matrice !
+        \item<+-> À chaque case $(i,j)$, on considère les tables
+                  \begin{itemize}
+                     \item $height[j]$ : le nombre de $1$ consécutifs sur la colonne $j$ en tenant compte des précédentes lignes $i-1,\dots$,
+                     \item $left[j]$ : la colonne la plus à gauche à partir de laquelle on a uniquement des $1$, de $left[j]$ à $j$.
+                     \item $right[j]$ : la colonne la plus à droite jusqu'à laquelle on a uniquement des $1$, de $j$ à $right[j]$.
+                  \end{itemize}
+        \item<+-> Initialement, $height[j]=0$, $left[j]=0$ et $right[j]=m$.
+    \end{itemize}
+\end{frame}
+
+\begin{frame}
+    \frametitle{\problemtitle}
+    \begin{itemize}
+        \item<+-> Pour une ligne $i$ :
+                  \begin{itemize}
+                     \item on parcourt chaque colonne $j$, si $M_{i,j}=1$, on actualise $height[j]\leftarrow height[j]+1$, sinon c'est $0$,
+                     \item $left$ et $right$ utilisent un balayage (gauche à droite ou droite à gauche) en retenant le nombre de $1$ consécutifs qu'on a vu, puis en remettant la valeur de la table à $0$ si on croise $0$ et pas $1$,
+                     \item<+-> une fois qu'on a fini la ligne $i$, on calcule le nombre de $1$ dans un sous-rectangle pour chaque colonne $j$ : \[MaxArea \leftarrow \max(MaxArea, height[j]\cdot (right[j]-left[j])).\]
+                  \end{itemize}
     \end{itemize}
     % \solvestats
 \end{frame}

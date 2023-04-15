@@ -58,3 +58,13 @@
   name: Stockage Difficile
   rgb: '#000000'
   time_limit: 1.0
+- id: koalation
+  label: M
+  name: Koalation
+  rgb: "#000000"
+  time_limit: 3.0
+- id: ravitaillement
+  label: N
+  name: Ravitaillement
+  rgb: "#000000"
+  time_limit: 5.5

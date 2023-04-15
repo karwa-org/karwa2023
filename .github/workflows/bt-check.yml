@@ -6,9 +6,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - uses: yegor256/latexmk-action@master
-        with:
-          packages: tikz
       - run: pip install --user pyyaml colorama argcomplete
       - run: git clone https://github.com/karwa-org/bapctools --depth 1 --branch master
       - run: bapctools/bin/tools.py pdf
