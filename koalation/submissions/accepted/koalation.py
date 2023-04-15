@@ -20,9 +20,13 @@ for j in range(10000):
 for i, n in enumerate(nbrs):
     if n == 1: nbrs[i] = (1,1)
     else:
+        test = False
         for p in primes:
             if n % p == 0:
                 nbrs[i] = (p, n)
+                test = True
                 break
+        if not test:
+            nbrs[i] = (p, p)
 nbrs.sort()
 print(' '.join(map(lambda x: str(x[1]), nbrs)))
