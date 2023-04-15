@@ -8,9 +8,9 @@
   name: Bonheur
   rgb: '#000000'
   time_limit: 2.0
-- id: connectonslestous
+- id: circuitconfort
   label: C
-  name: connectons Les Tous
+  name: Circuit Confort
   rgb: '#000000'
   time_limit: 6.0
 - id: labyrinthe
@@ -48,8 +48,13 @@
   name: Miroir Magique
   rgb: '#000000'
   time_limit: 1.0
-- id: stockagedifficile
+- id: connectonslestous
   label: K
+  name: Konnectons Les Tous
+  rgb: '#000000'
+  time_limit: 6.0
+- id: stockagedifficile
+  label: L
   name: Stockage Difficile
   rgb: '#000000'
   time_limit: 1.0
