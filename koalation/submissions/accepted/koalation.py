@@ -1,4 +1,4 @@
-nbrs = [2, 4, 5, 8]
+nbrs = [int(i) for i in input().split()]
 
 primes = [2, 3]
 
