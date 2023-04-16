@@ -27,7 +27,7 @@
   label: F
   name: Navettes
   rgb: '#000000'
-  time_limit: 1.0
+  time_limit: 0.5
 - id: horizoncomplexe
   label: H
   name: Horizon Complexe
