@@ -1,4 +1,5 @@
 from functools import cmp_to_key
+n = int(input())
 a = list(map(int, input().split()))
 
 mx = max(a)
