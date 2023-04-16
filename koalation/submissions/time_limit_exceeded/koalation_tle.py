@@ -10,7 +10,7 @@ def isPrime(n):
             return False
     return True
 
-for j in range(2, max(nbrs)):
+for j in range(2, int(1e6)):
     if isPrime(j):
         primes.append(j)
 
