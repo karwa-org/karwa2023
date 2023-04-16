@@ -1,26 +1,21 @@
 \problemname{\problemyamlname}
 
-La Koalation Australienne Représentée par des Walabi, la KARWa, est une société australienne
-composées de koalas et de walabis. Les walabis étant largement plus intelligents que les koalas qui ne sont bons qu'à diviser,
-ceux-ci on créé un ingénieux système de référencement. À chaque koala est donné un référent walabi pour gérer leur stock ded nourriture à leur place.
-Ainsi, à chaque koala on donne un nombre entre $2$ et $10^6$ (potentiellement plusieurs koalas ont le même nombre) et à chaque walabi est donné un nombre permier entre 2 et 100 000.
-Les koalas étant bon pour calculer les diviseurs du nombre qui leur est donné, mais ils sont trop désordonnés.
+La Koalation Australienne Représentée par des Wallaby, la KARWa, est une société australienne
+composées de koalas et de wallaby. Les wallabies étant largement plus intelligents que les koalas n'étant bons qu'à diviser ont inventé un systême de
+référencement, voici comment il fonctionne :
+
+ - Un wallaby est toujours représenté par un nombre premier
+ - Un koala est assigné au wallaby avec le plus petit diviseur du nombre représentant ce koala
 
 La KARWa à besoin de vous ! Avec le nombre croissant de ses nouveaux adhérants, les koalas sont devenu impossible a rassembler suivant leur réferrant.
-Nous vous demandons donc de créer un algorithme qui étant donné une liste de koalas donnée par leur nombre. De retourner une nouvelle liste
-triée en fonction des référents et ce dans l'ordre croissant des référents.
-Si deux koalas ont le même référent alors c'est celui qui a le plus petit nombre qui passe avant.
-
-Par exemple :
-
-Koala1 a le nombre $25$ et koala2 a le nombre $10$,
-alors Koala1 sera après koala2 car le référent de koala1 est le walabi de numéro 5 et le référent de koala2 est le walabi de numéro 2
-
-Koala3 a le nombre $15$ et koala4 a le nombre $9$,
-alors Koala3 sera après koala4 car malgrès qu'ils aient le même référent, koala3 a un nombre plus grand que koala4
+Nous vous demandons donc de créer un algorithme qui étant donné une liste de nombres représentant des koalas. De retourner une nouvelle liste
+triée en fonction des référents de chaques koalas, s'ils ont les mêmes référents, alors c'est l'ordre croissant qui est utilisé.
 
 \begin{Input}
-	Une ligne de $1 \leq n \leq 10^5$ nombres $2 \le n_i \le 10^6$.
+	\begin{itemize}
+		\item Un entier $1 \leq n \leq 10 000$
+		\item Une ligne contenant les $n$ nombres $2 \leq n_i \leq 10^5$.
+	\end{itemize}
 \end{Input}
 
 \begin{Output}
