@@ -14,8 +14,7 @@ validation: default
 # space_change_sensitive
 # float_absolute_tolerance eps
 # float_relative_tolerance eps
-# float_tolerance eps
-#validator_flags:
+validator_flags: float_tolerance 0.000001
 
 # To change the time limit factors for problemtools/Kattis, use:
 # limits:
