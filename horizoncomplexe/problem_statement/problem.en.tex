@@ -12,7 +12,6 @@ Pour chaque emplacement de 1 mètre de large, le plan vous donne la hauteur du b
 \centering
 \begin{tikzpicture}
 \draw[step=1.0, gray, ultra thin] (0,0) grid (10, 8);
-\draw [ultra thick] (0,0) -- (10, 0);
 
   \draw[ultra thick] (0,0) -- (0, 5);
   \draw[ultra thick] (0, 5) -- (2, 5);
@@ -25,17 +24,6 @@ Pour chaque emplacement de 1 mètre de large, le plan vous donne la hauteur du b
   \draw[ultra thick] (9, 3) -- (10, 3);
   \draw[ultra thick] (10, 3) -- (10, 0);
 
-  \draw[red, ultra thin] (0,0) -- (0, 5);
-  \draw[red, ultra thin] (0, 5) -- (2, 5);
-  \draw[red, ultra thin](2,5) -- (2, 7);
-  \draw[red, ultra thin](2, 7) -- (4, 7);
-  \draw[red, ultra thin](4,7) -- (4, 0);
-  \draw[red, ultra thin](4, 0) -- (8, 0);
-  \draw[red, ultra thin](8,0) -- (8, 2);
-  \draw[red, ultra thin](8, 2) -- (9, 2);
-  \draw[red, ultra thin](9, 2) -- (9, 3);
-  \draw[red, ultra thin] (9, 3) -- (10, 3);
-  \draw[red, ultra thin] (10, 3) -- (10, 0);
     \foreach \x in {1, ..., 10} {%
       % Bottom
       \node[anchor=north] at (\x-0.5,0) {\x};
@@ -47,7 +35,7 @@ Pour chaque emplacement de 1 mètre de large, le plan vous donne la hauteur du b
     }
 \end{tikzpicture}
 \newline
-\textit{Illustration de l'exemple 1 \\ En rouge, là oú la ville souhaite poser des panneaux sur les bâtiments.}
+\textit{Illustration de l'exemple 1 \\ En noir, là oú la ville souhaite poser des panneaux sur les bâtiments.}
 \end{figure}
 
 \begin{Input}
