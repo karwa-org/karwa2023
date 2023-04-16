@@ -10,11 +10,10 @@ def isPrime(n):
             return False
     return True
 
-for j in range(10000):
-    if isPrime(5 + j*6):
-        primes.append(5 + j*6)
-    if isPrime(7 + j*6):
-        primes.append(7 + j*6)
+for j in range(2, int(1e6)):
+    if isPrime(j):
+        primes.append(j)
+
 
 
 for i, n in enumerate(nbrs):
