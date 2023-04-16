@@ -17,13 +17,13 @@ Autrement dit, le coût total des liaisons doit être inférieur ou égal à $1.
 Il est garanti qu'il est possible de relier tous les karaokés entre eux.
 
 \begin{Input}
-	Les entrées consiste de :
+	L'entrée consiste en :
 	\begin{itemize}
-		\item Une ligne avec 2 entiers $2 \le n \le 10^5$ et $1 \le m \le 2 \times 10^5$, représentant respectivement le nombre de karaokés et le nombre de liaisons entre deux karaokés.
-		\item $m$ lignes avec trois entiers  $1 \le u \le n$ et $1 \le v \le n$, $1 \le w \le 10^9$, représentant une liaison bidirectionnelle entre deux karaokés.
+		\item une ligne avec 2 entiers $n$ et $m$ ($2 \le n \le 10^5$ et $1 \le m \le 2 \times 10^5$), représentant respectivement le nombre de karaokés et le nombre de liaisons entre deux karaokés,
+		\item $m$ lignes avec trois entiers $u$, $v$ et $w$ ($1 \le u \le n$, $1 \le v \le n$ et $1 \le w \le 10^9$), représentant une liaison bidirectionnelle entre deux karaokés $u$ et $v$ dont le poids est $w$.
 	\end{itemize}
 \end{Input}
 
 \begin{Output}
-	Un entier K représentant le poids de l'arête minimale du réseaux connectant les karaokés avec un coût inférieur à $125\%$ du coût de base.
+	Un entier $K$ représentant le poids de l'arête minimale du réseau connectant les karaokés avec un coût inférieur à $125\%$ du coût de base.
 \end{Output}

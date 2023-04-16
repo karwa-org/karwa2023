@@ -1,19 +1,19 @@
 \begin{frame}
     \frametitle{\problemtitle}
     \begin{itemize}
-        \item<+-> \textbf{Problem:} 2SUM, la somme de 2 éléments d'une liste égale K
-        \item<+-> Solution Naive: Essayer toutes les paires d'éléments dans la liste $\mathcal O(n^2)$ C'est trop lent!
-        \item<+-> 2 approches
-        \item<+-> Hashset, iterer sur la liste a
+        \item<+-> \textbf{Problème:} 2SUM, la somme de 2 éléments d'une liste égale $k$.
+        \item<+-> Solution Na\"ive: Essayer toutes les paires d'éléments dans la liste $\mathcal O(n^2)$ C'est trop lent !
+        \item<+-> 2 approches :
+        \item<+-> Hashset, iterer sur la liste, pour chaque $a_i$ ($\mathcal O(n)$) :
         \begin{itemize}
-            \item<+-> caluler $t = k - a_i$ $\mathcal O(n)$
-            \item<+-> t dans le Hashset ? 
+            \item<+-> caluler $t = k - a_i$
+            \item<+-> $t$ dans le Hashset ?
             \begin{itemize}
                 \item si oui, bingo !
                 \item Sinon ajouter $a_i$ au Hashset
             \end{itemize}
         \end{itemize}
-        \item<+-> 2 pointeurs, cat la liste est déja trié ! $\mathcal O(n)$
+        \item<+-> 2 pointeurs, car la liste est déja triée ! ($\mathcal O(n)$)
     \end{itemize}
     % \solvestats
 \end{frame}
