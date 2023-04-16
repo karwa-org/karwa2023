@@ -3,7 +3,7 @@
     \begin{itemize}
         % TODO: Remove this comment when you're done writing the solutions.
         \item<+-> \textbf{Problème:} Déterminer le gagnant d'un jeu de Nim (cf. Wikipédia) via une stratégie gagnante.
-        \item<+-> Il suffit de calculer $n \mathsf{mod} (k + 1)$ (raisonnement en regardant qui gagne à partir de $m \le k+1$ bâtons, propager cette idée par pas de $k+1$ bâtons jusqu'à $n$, on retombe sur une condition de multiple de $k+1$).
+        \item<+-> Il suffit de calculer $n\;\mathsf{mod}\; (k + 1)$ (raisonnement en regardant qui peut gagner à partir de $m \le k+1$ bâtons, propager cette idée par pas de $k+1$ bâtons jusqu'à $n$, on retombe sur une condition de multiple de $k+1$).
         \item<+-> $\mathcal O(1)$ !
     \end{itemize}
     % \solvestats

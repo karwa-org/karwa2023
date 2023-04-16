@@ -3,7 +3,7 @@
     \begin{itemize}
         \item<+-> \textbf{Problème:} Déterminer s'il existe un cycle eulérien dans un graphe non-orienté.
         \item<+-> Appliquer le théorème d'Euler: un graphe connexe admet un cycle eulérien ssi tous ses sommets ont un degré pair.
-        \item<+-> On vérifie que le graphe est connexe (attention à la gare de départ qui doit aussi être considérée).
+        \item<+-> On vérifie que le graphe est connexe, par exemple via un DFS qui marque les sommets puis en vérifiant que tous les sommets sont marqués (attention à la gare de départ qui doit aussi être considérée).
         \item<+-> On vérifie ensuite le nombre d'arêtes sortantes (c-à-d le degré) de chaque sommet.
     \end{itemize}
     % \solvestats

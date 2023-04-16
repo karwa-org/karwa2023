@@ -1,16 +1,16 @@
 \begin{frame}
     \frametitle{\problemtitle}
     \begin{itemize}
-        \item<+-> \textbf{Problème:} Optimiser l'aire d'un triangle rectangle $(a,b,c)$ en conservant le même périmètre
-        \item<+-> Pour l'hypoténuse $c$ fixée, l'aire est maximale si $a=b$ (simple problème d'optimisation par dérivation).
+        \item<+-> \textbf{Problème:} Optimiser l'aire d'un triangle rectangle $(a,b,c)$ en conservant l'hypothénuse $c$.
+        \item<+-> Pour l'hypoténuse $c$ fixée, l'aire est maximale si $a=b$. Cela se vérifie par un simple problème d'optimisation par dérivation :
         \begin{itemize}
-            \item $a^2 + b^2 = h^2$
-            \item $0.5 \cdot a\cdot b = A$
-            \item $b = \sqrt[2]{h^2 - a^2}$ 
-            \item $\frac{\partial A}{\partial a} = \frac{h^2-2a^2}{2\sqrt[2]{h^2-a^2}}$
-            \item $a=b=\frac{h}{\sqrt[2]{2}}$
+            \item Aire : $1/2 \cdot a\cdot b = A$,
+            \item Pythagore nous donne : $a^2 + b^2 = c^2$,
+            \item On exprime $b$ par rapport à $a$ : $b = \sqrt{c^2 - a^2}$ (notez que $a+b<c$),
+            \item On dérive la fonction d'aire en $a$ : $\frac{\partial A}{\partial a} = \frac{c^2-2a^2}{2\sqrt{c^2-a^2}}$,
+            \item La dérivée s'annule si $a=\frac{c}{\sqrt{2}}$, en retombe sur $b=a$ par Pythagore.
         \end{itemize}
-        \item<+-> Si on ignore la contrainte d'entier palindromique sur $c$, le plus grand rectangle possible est $(n,n,n\sqrt{2})$ qui prend la moitié du carré $n\times n$.
+        \item<+-> Si on ignore la contrainte d'entier et de palindrome sur $c$, le plus grand rectangle possible est $(n,n,n\sqrt{2})$ qui prend la moitié du carré $n\times n$.
         \item<+-> Avec la contrainte, on itière avec $c$ de $\lfloor n\sqrt{2} \rfloor$ à $0$ : prendre le premier palindrome rencontré et afficher l'aire.
         \item<+-> Pour l'hypoténuse connue $c$, un autre côté est de longueur $c/\sqrt{2}$ donc l'aire est donnée par \[\frac{1}{2}\cdot\left(\frac{c}{\sqrt{2}}\right)^2 = \frac{c^2}{4}.\]
 %Attention à bien stopper la boucle dès qu'on trouve un palindrome. Aussi, on doit bien arrondir à l'inférieure et pas round ni ceil(n*sqrt(2)), ça casse si c'est un palindrome.
