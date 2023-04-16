@@ -33,9 +33,9 @@ respectivement le nombre de zones en ligne, le nombre de zones en colonne et le 
 		\item $n$ lignes, où une ligne contient $m$ noms séparés par un espace, c'est-à-dire de la forme $nom_1 nom_2 ... nom_m$. Le $m$\textsuperscript{ème} nom représente l'équipe sur la zone $(n,m)$,
 		\item $k$ lignes, où une ligne est le nom d'une équipe de responsables.
 	\end{itemize}
-	Les noms sont donnés en minuscule sans caractères avec uniquement l'une des 26 lettres de l'alphabet, et lorsqu'une case n'est occupée par aucune équipe, le nom correspondant sera ``\verb|null|''.
+	Les noms sont composés de lettres de l'alphabet, en minuscule et sans accent ni caractères spéciaux. Lorsqu'une case n'est occupée par aucune équipe, le nom correspondant sera ``\verb|null|''.
 \end{Input}
 
 \begin{Output}
-	Le nombre maximal de zones formant un rectangle dans lequel toutes les zones carrées sont occupées par des responsables.
+    Le nombre de zone dans le plus grand rectangle composé uniquement de zones occupées par des responsables.
 \end{Output}
