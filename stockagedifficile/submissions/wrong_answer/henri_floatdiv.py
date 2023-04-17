@@ -13,7 +13,7 @@ def mat_pow(A, k):
         return [[1, 0], [0, 1]]
     else:
         if k % 2 == 0:
-            B = mat_pow(A, k // 2)
+            B = mat_pow(A, k / 2)
             return mat_mul(B, B)
         else:
             B = mat_pow(A, k-1)

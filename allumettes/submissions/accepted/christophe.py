@@ -1,0 +1,1 @@
+print('Aymeric' if 0==__import__('functools').reduce(lambda n,k: n%(k+1),list(map(int,input().split()))) else 'Brieuc')

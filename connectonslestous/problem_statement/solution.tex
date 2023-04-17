@@ -3,8 +3,8 @@
     \begin{itemize}
         % TODO: Remove this comment when you're done writing the solutions.
         \item<+-> \textbf{Problème:} Trouver le minimum spanning tree où chaque arête a un poids supérieur ou égal à $K$ et tel que le cout total soit inférieur à $125\%$ du coût de base.
-        \item<+-> Solution na\"ive: faire tourner kruskal pour tous les poids possibles $\mathcal O(m^2\cdot log(m))$, c'est trop lent :/ !
-        \item<+-> Il suffit d'utiliser binary + kruskal ! $\mathcal O(m \cdot log(m))$.
+        \item<+-> Solution na\"ive: faire tourner Kruskal pour tous les poids possibles $\mathcal O(m^2\cdot log(m))$, c'est trop lent :/ !
+        \item<+-> Il suffit d'utiliser une dichotomie (recherche binaire) sur les poids possibles + Kruskal ! $\mathcal O(m \cdot log(m))$.
     \end{itemize}
     % \solvestats
 \end{frame}

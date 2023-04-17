@@ -1,0 +1,1 @@
+print(__import__('math').ceil(__import__('functools').reduce(lambda a,b: a/b,list(map(int,input().split())))))
