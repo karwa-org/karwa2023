@@ -1,10 +1,22 @@
 \begin{frame}
     \frametitle{\problemtitle}
     \begin{itemize}
-        % TODO: Remove this comment when you're done writing the solutions.
-        \item<+-> \textbf{Problème:} Afficher $4\sqrt n$ avec suffisamment de digits.
-        \item<+-> Solution na\"ive : todo do something stupid. $\mathcal O(2^n)$ is too slow!
-        \item<+-> Instead, just compute the answer. $\mathcal O(1)$.
+        \item<+-> \textbf{Problème:} Trouver le nombre de positions des $n$ boissons dans une grille de $n\times 2$, avec $n \le 10^{18}$.
+        \item<+-> Avec des connaissances ou des exemples, on remarque que cela revient à calculer le $n+1$\textsuperscript{ème} nombre de fibonacci $f_{n+1}$.
+        \item<+-> La plupart des algorithmes ne fonctionnent pas, $10^{18}$ est une borne trop grande. Il faut impérativement utiliser une approche en $\mathcal{O}(\log n)$ !
+        \item<+-> Il existe la méthode avec l'exponentiation matricielle :
+        \[
+        \begin{pmatrix}
+        1 & 1\\
+        1 & 0
+        \end{pmatrix}^n =
+        \begin{pmatrix}
+        f_{n+1} & f_{n}\\
+        f_{n} & f_{n-1}
+        \end{pmatrix}
+        \]
+        \item<+-> Grâce à l'exponentiation optimisée (si $n$ est pair, on prend le carré de la matrice et $n\leftarrow n/2$, sinon on multiplie une fois et $n\leftarrow n-1$), on obtient un algorithme en temps logarithmique $\mathcal{O}(\log n)$.
+        \item<+-> N'oubliez pas d'opérer modulo $7+10^9$ !
     \end{itemize}
     % \solvestats
 \end{frame}

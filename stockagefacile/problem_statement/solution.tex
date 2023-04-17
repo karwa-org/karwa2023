@@ -1,10 +1,10 @@
 \begin{frame}
     \frametitle{\problemtitle}
     \begin{itemize}
-        % TODO: Remove this comment when you're done writing the solutions.
-        \item<+-> \textbf{Problème:} Afficher $4\sqrt n$ avec suffisamment de digits.
-        \item<+-> Solution na\"ive : todo do something stupid. $\mathcal O(2^n)$ is too slow!
-        \item<+-> Instead, just compute the answer. $\mathcal O(1)$.
+        \item<+-> \textbf{Problème:} Trouver le nombre de positions des $n$ boissons dans une grille de $n\times 2$, avec $n \le 10^{6}$.
+        \item<+-> Avec des connaissances ou des exemples, on remarque que cela revient à calculer le $n+1$\textsuperscript{ème} nombre de fibonacci $f_{n+1}$.
+        \item<+-> Un algorithme très na\"if ne fonctionne pas, on a une trop grande pile pour la récursivité (même avec de la mémo\"isation, même problème).
+        \item<+-> Par contre, des solutions itératives linéaires ou logarithmiques peuvent fonctionner, ou même un DP. N'oubliez pas d'opérer modulo $7+10^9$ !
     \end{itemize}
     % \solvestats
 \end{frame}
