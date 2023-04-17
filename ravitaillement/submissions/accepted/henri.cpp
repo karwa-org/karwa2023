@@ -1,6 +1,8 @@
 #include <iostream>
 #include <set>
- 
+#include <vector>
+#include<algorithm>
+
 #define int long long
 #define P(x) {if (debug) cout << x << endl;}
 #define H(x) P(#x << ": " << (x))

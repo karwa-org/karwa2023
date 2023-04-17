@@ -1,5 +1,6 @@
 #include <iostream>
 #include <vector>
+#include<algorithm>
  
 #define int long long
 #define P(x) {if (debug) cout << x << endl;}
