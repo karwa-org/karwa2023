@@ -1,4 +1,5 @@
-#include <bits/stdc++.h>
+#include <iostream>
+#include <vector>
  
 #define int long long
 #define P(x) {if (debug) cout << x << endl;}
