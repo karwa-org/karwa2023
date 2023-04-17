@@ -16,6 +16,26 @@ Autrement dit, le coût total des liaisons doit être inférieur ou égal à $1.
 
 Il est garanti qu'il est possible de relier tous les karaokés entre eux.
 
+\begin{figure}[h]
+	\centering
+	\begin{tikzpicture}
+		% Définition des noeuds
+		\node[circle,draw] (1) at (0,0) {1};
+		\node[circle,draw] (2) at (2,2) {2};
+		\node[circle,draw] (3) at (4,0) {3};
+		\node[circle,draw] (4) at (2,-2) {4};
+		
+		% Définition des arêtes
+		\draw (1) -- node[above]{6} (4);
+		\draw[line width=2pt] (1) -- node[above]{3} (2);
+		\draw[line width=2pt] (2) -- node[above]{3} (3);
+		\draw (3) -- node[above]{2} (4);
+		\draw[line width=2pt] (4) -- node[below right]{4} (2);
+		\draw (1) -- node[above left]{7} (3);
+	\end{tikzpicture}
+	  \caption[]{Exemple 1, en gras le réseaux}
+\end{figure}
+
 \begin{Input}
 	L'entrée consiste en :
 	\begin{itemize}
