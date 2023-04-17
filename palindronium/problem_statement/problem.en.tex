@@ -14,9 +14,28 @@ Par souci d'espace, vous ne pouvez modéliser qu'un seul moule, et celui-ci doit
 
 Un nombre est un palindrome s'il ne change pas lorsqu'il est lu de gauche à droite ou de droite à gauche, chiffre par chiffre.
 Par exemple, $191$ est un palindrome, mais $155$ ne l'est pas.
-Ainsi, si le carré dans lequel votre moule doit rentrer a une taille de $15 \times 15$, vous pouvez fabriquer un moule de taille $(3,4,5)$ qui forme bien un triangle rectangle dont la longueur de l'hypoténuse, $5$, est un palindrome.
-L'aire de ce moule sera $6$.
 Votre but est d'avoir la plus grande aire possible sous ces contraintes ! Attention cependant, on ne demande qu'à l'hypoténuse d'être entier et d'être un palindrome, les autres côtés n'ont aucune restriction.
+
+Par exemple, si le carré dans lequel votre moule doit rentrer a une taille de $12 \times 12$, vous pouvez fabriquer un moule de taille $(3,4,5)$ car $5$, l'hypothénuse, est un palindrome, ce qui donnera une aire de moule de $6$. Vous pouvez aussi faire un moule de taille $(\sqrt{105},4,11)$.
+
+\begin{figure}[h]
+\centering
+\begin{tikzpicture}[x=0.75pt,y=0.75pt,yscale=-1,xscale=1]
+%uncomment if require: \path (0,300); %set diagram left start at 0, and has height of 300
+
+%Shape: Rectangle [id:dp8053011662910811]
+\draw  [dash pattern={on 3.75pt off 3pt on 7.5pt off 1.5pt}] (219.5,49.5) -- (380.75,49.5) -- (380.75,210.7) -- (219.5,210.7) -- cycle ;
+%Shape: Right Triangle [id:dp47291251588999583]
+\draw   (306.52,208.08) -- (249.63,52.79) -- (359.76,143.26) -- cycle ;
+%Shape: Right Angle [id:dp6371826673456693]
+\draw   (347.44,138.41) -- (354.24,143.94) -- (348.83,150.58) ;
+
+% Text Node
+\draw (260.5,139) node [anchor=north west][inner sep=0.75pt]   [align=left] {$\displaystyle 11$};
+% Text Node
+\draw (272,212.5) node [anchor=north west][inner sep=0.75pt]   [align=left] {$\displaystyle n=12$};
+\end{tikzpicture}
+\end{figure}
 
 \begin{Input}
 	Un entier $n$ ($1 \le n \le 10^8$) donnant la longueur des côtés du carré devant contenir le moule triangulaire.
