@@ -13,34 +13,34 @@
   name: Circuit Confort
   rgb: '#000000'
   time_limit: 1.0
-- id: labyrinthe
+- id: stockagedifficile
   label: D
-  name: Labyrinthe
+  name: Stockage Difficile
   rgb: '#000000'
-  time_limit: 2.0
+  time_limit: 1.0
 - id: enretard
   label: E
   name: En Retard
   rgb: '#000000'
   time_limit: 1.0
-- id: ravitaillement
-  label: F
-  name: Ravitaillement
-  rgb: '#000000'
-  time_limit: 5.0
 - id: stockagefacile
-  label: G
+  label: F
   name: Stockage Facile
   rgb: '#000000'
   time_limit: 1.0
+- id: ravitaillement
+  label: G
+  name: Ravitaillement
+  rgb: '#000000'
+  time_limit: 5.0
 - id: horizoncomplexe
   label: H
   name: Horizon Complexe
   rgb: '#000000'
   time_limit: 1.0
-- id: palindronium
+- id: impossible
   label: I
-  name: Palindronium Pythagoricien
+  name: Impossible
   rgb: '#000000'
   time_limit: 1.0
 - id: koalation
@@ -53,11 +53,11 @@
   name: Konnectons Les Tous
   rgb: '#000000'
   time_limit: 6.0
-- id: stockagedifficile
+- id: labyrinthe
   label: L
-  name: Stockage Difficile
+  name: Labyrinthe
   rgb: '#000000'
-  time_limit: 1.0
+  time_limit: 2.0
 - id: miroirmagique
   label: M
   name: Miroir Magique
@@ -68,3 +68,8 @@
   name: Navettes
   rgb: '#000000'
   time_limit: 0.5
+- id: palindronium
+  label: I
+  name: Palindronium Pythagoricien
+  rgb: '#000000'
+  time_limit: 1.0
