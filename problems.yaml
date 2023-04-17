@@ -23,19 +23,19 @@
   name: En Retard
   rgb: '#000000'
   time_limit: 1.0
-- id: navettes
+- id: ravitaillement
   label: F
-  name: Navettes
+  name: Ravitaillement
   rgb: '#000000'
-  time_limit: 0.5
-- id: horizoncomplexe
-  label: H
-  name: Horizon Complexe
-  rgb: '#000000'
-  time_limit: 1.0
+  time_limit: 5.0
 - id: stockagefacile
   label: G
   name: Stockage Facile
+  rgb: '#000000'
+  time_limit: 1.0
+- id: horizoncomplexe
+  label: H
+  name: Horizon Complexe
   rgb: '#000000'
   time_limit: 1.0
 - id: palindronium
@@ -43,11 +43,11 @@
   name: Palindronium Pythagoricien
   rgb: '#000000'
   time_limit: 1.0
-- id: miroirmagique
+- id: koalation
   label: J
-  name: Miroir Magique
+  name: Koalation
   rgb: '#000000'
-  time_limit: 1.0
+  time_limit: 3.0
 - id: connectonslestous
   label: K
   name: Konnectons Les Tous
@@ -58,13 +58,13 @@
   name: Stockage Difficile
   rgb: '#000000'
   time_limit: 1.0
-- id: koalation
+- id: miroirmagique
   label: M
-  name: Koalation
+  name: Miroir Magique
   rgb: '#000000'
-  time_limit: 3.0
-- id: ravitaillement
+  time_limit: 1.0
+- id: navettes
   label: N
-  name: Ravitaillement
+  name: Navettes
   rgb: '#000000'
-  time_limit: 5.0
+  time_limit: 0.5
