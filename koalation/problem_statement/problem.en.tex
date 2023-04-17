@@ -4,12 +4,11 @@ La Koalation Australienne représentée par des Wallabies, également connue sou
 
 \begin{itemize}
 	\item Chaque wallaby est représenté par un nombre premier.
-	\item Chaque koala est assigné au wallaby ayant le plus petit diviseur du nombre qui représente ce koala.
+	\item Chaque koala est représenté par un nombre entier. Il est assigné au wallaby ayant pour numéro le plus petit diviseur de son propre nombre, excepté 1. Par exemple, le koala 15 est assigné au wallaby 3
 \end{itemize}
 Cependant, avec le nombre croissant de nouveaux adhérents, les koalas sont devenus difficiles à rassembler selon leur référent. La KARWa a donc besoin de votre aide pour créer un algorithme qui, à partir d'une liste de nombres représentant des koalas, renvoie une nouvelle liste triée en fonction des référents de chaque koala dans l'ordre croissant. Si deux koalas ont le même référent, alors c'est l'ordre croissant qui est utilisé.
 
 \begin{Input}
-	L'entrée consiste en :
 	\begin{itemize}
 		\item un entier $n$ ($1 \leq n \leq 10^4$), le nombre d'éléments dans la liste,
 		\item une ligne contenant les $n$ nombres $n_i$, pour $i$ allant de $0$ à $n$ ($2 \leq n_i \leq 10^5$).
