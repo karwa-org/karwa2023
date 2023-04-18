@@ -4,25 +4,25 @@
 	\centering
 	\includegraphics[width=5.5cm]{railway.jpg}
 \end{wrapfigure}
-Dans le cadre de la campagne \emph{Circuit Confort}, Bertrand Karwa et son équipe de Sécurail sont réhabilités
-temporairement pour gérer la sécurité de plusieurs lignes ferroviaires belges. Ils reçoivent une liste de lignes
-entre deux gares à emprunter, et ils doivent passer au moins une fois sur chaque ligne afin de montrer aux
-voyageurs leur présence et ainsi les rassurer.
 
-Ils souhaitent optimiser leur chemin dans le but d'emprunter chaque ligne de train exactement une fois, indépendamment du sens dans lequel il la prenne, mais ils ne sont pas sûrs
-de la faisabilité de la tâche. Aidez-les à déterminer s'il leur est possible \textbf{en démarrant à une gare donnée}, de suivre un chemin pour \textbf{rentrer à cette même gare} et en passant \textbf{une et une seule fois} sur chaque ligne de train.
+In the context of the \emph{Comfortable Circuit} campaign, Bertand Karwa and his Securail team are temporarily reassigned to managing the safety of multiple Belgian train lines.
+They receive a list of the lines to take between two stations, and they must pass at least once over each line so as to show to the train passengers their presence and, thus, to reassure them.
+
+They would like to optimize their path so as to take each train line exactly once, independently of the direction in which they're taking it.
+However, they are unsure of the feasibility of this task.
+Help them to determine if it's possible \textbf{starting at a given station} to follow a path to return at that \textbf{same station} and passing by each train line \textbf{once and only once}.
 
 \begin{Input}
-	L'entrée consiste en :
+	The input consists of:
 	\begin{itemize}
-		\item une ligne avec un entier $n$ ($3 \le n \le 10^3$), le nombre de chemins que Mr. Karwa et son équipe doivent emprunter,
-		\item une ligne avec un nom de gare, là d'où doivent partir Mr. Karwa et son équipe,
-		\item $n$ lignes contenant un chemin à emprunter entre deux gares, c'est-à-dire deux chaînes de caractères séparées par un espace ``\verb|gare1 gare2|'' pour dire qu'ils doivent emprunter soit la ligne de ``\verb|gare1|'' à ``\verb|gare2|'' ou soit de ``\verb|gare2|'' à ``\verb|gare1|'' (mais pas les deux).
+		\item One line with an integer $n$ ($3 \le n \le 10^3$), the number of paths that Mr. Karwa and his team must take.
+		\item One line with the name of a station, where Mr. Karwa and his team must depart from.
+		\item $n$ lines containing a path to take, that is two string separated by a space ``\verb|station1 station2|'' to say that they must take the line from ``\verb|station1|'' to ``\verb|station2|'' or from ``\verb|station2|'' to ``\verb|station1|'' (but not both).
 	\end{itemize}
-	Les noms de gares sont donnés en lettre alphabétique minuscule.
-	Une ligne de train entre deux gares ne sera donnée qu'une seule fois et agit comme une ligne à double sens.
+	The names of the stations are given as a lowercase alphabetic letter.
+	A train line between two station will only be given once and acts as a bidirectional line.
 \end{Input}
 
 \begin{Output}
-	S'il est impossible pour Mr. Karwa et son équipe de visiter exactement une fois chaque ligne de train donnée, donnez en sortie ``\verb|impossible|'', sinon donnez ``\verb|ok|''.
+	If it's possible for Mr. Karwa and his team to visit each train line exactly once, show ``\verb|impossible|'', otherwise show ``\verb|ok|''.
 \end{Output}

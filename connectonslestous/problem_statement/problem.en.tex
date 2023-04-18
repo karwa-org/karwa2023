@@ -4,17 +4,17 @@
 % Source: URL to image.
 
 % optionally define variables/limits for this problem
-En prévision de la prochaine édition du BAPC à l'UCLouvain, la société KARWa Corp. souhaite relier tous les karaokés de Belgique entre eux.
-Pour cela, elle contacte la SNCB et la STIB qui font appel à vous pour trouver la meilleure façon de relier tous les karaokés.
+In preparation for the next edition of the BAPC at UCLouvain, KARWa Corp. wishes to connect all the karaokes of Belgium with eachother.
+For that, they contact the SNCB and the STIB who call you to find the best way to connect all the karaokes.
 
-Il y a $n$ karaokés numérotés de $1$ à $n$ et $m$ liaisons bidirectionnelles entre certains d'entre eux.
-Chaque liaison a un poids $w$ représentant la distance entre les deux karaokés reliés.
-L'objectif est de relier tous les karaokés entre-eux tout en minimisant le coût (distance) total de toutes les liaisons.
+There are $n$ karaokes numbered from $1$ to $n$ and $m$ bidirectional connections between some of them.
+Each connection has a weight $w$ representing the distance between all the connected karaokes.
+The goal is to connect all the karaokes between them while minimizing the total cost (distance) of all the connections.
 
-Cependant, les petites liaisons (avec un petit poids) sont chères, la SNCB souhaite donc maximiser le poids de l'arête minimale de sorte que le coût (la distance) total des liaisons soit inférieur à $125\%$ du coût (de la distance) minimal pour relier tous les karaokés.
-Autrement dit, le coût total des liaisons doit être inférieur ou égal à $1.25$ fois le coût minimum pour que le projet soit viable.
+However, the small connections (with a small weight) are expensive, so the SNCB wishes to maximize the weight of the minimum edge such that the total cost (distance) of the connections is inferior to $125\%$ of the minimum cost (of the distance) to connect all the karaokes.
+In other words. the total cost of the connections must be less than or equal to $1.25$ times the minimum cost for the project to be viable.
 
-Il est garanti qu'il est possible de relier tous les karaokés entre eux.
+It is guaranteed that it's possible to connect all the karaokes between eachother.
 
 \begin{figure}[h]
 	\centering
@@ -33,17 +33,17 @@ Il est garanti qu'il est possible de relier tous les karaokés entre eux.
 		\draw[line width=2pt] (4) -- node[below right]{4} (2);
 		\draw (1) -- node[above left]{7} (3);
 	\end{tikzpicture}
-	  \caption[]{Exemple 1, en gras le réseaux}
+	  \caption[]{Example 1, the network is bold}
 \end{figure}
 
 \begin{Input}
-	L'entrée consiste en :
+	The input consists of:
 	\begin{itemize}
-		\item une ligne avec 2 entiers $n$ et $m$ ($2 \le n \le 10^5$ et $1 \le m \le 2 \times 10^5$), représentant respectivement le nombre de karaokés et le nombre de liaisons entre deux karaokés,
-		\item $m$ lignes avec trois entiers $u$, $v$ et $w$ ($1 \le u \le n$, $1 \le v \le n$ et $1 \le w \le 10^9$), représentant une liaison bidirectionnelle entre deux karaokés $u$ et $v$ dont le poids est $w$.
+		\item One line with 2 integers $n$ and $m$ ($2 \le n \le 10^5$ and $1 \le m \le 2 \times 10^5$), representing respectively the number of karaokes and the number of connections between two karaokes.
+		\item $m$ lines with 3 integers $u$, $v$ and $w$ ($1 \le u \le n$, $1 \le v \le n$ and $1 \le w \le 10^9$), representing a bidirectional connection between two karaokes $u$ and $v$ who's weight is $w$.
 	\end{itemize}
 \end{Input}
 
 \begin{Output}
-	Un entier $K$ représentant le poids de l'arête de poids minimale du réseau connectant les karaokés avec un coût inférieur à $125\%$ du coût de base.
+	An integer $k$ representing the weight of the minimum weight edge of the network which connects all the karaokes with a cost inferior to $125\%$ of the original cost.
 \end{Output}

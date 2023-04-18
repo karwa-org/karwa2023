@@ -4,19 +4,15 @@
     \centering
     \includegraphics[width=5.5cm]{palindromium.jpg}
 \end{wrapfigure}
-Un débat a éclaté entre les étudiants de l'UMons et de l'UCLouvain.
-Ils ne parviennent pas à se mettre d'accord sur la meilleure des deux universités, surtout dans le domaine scientifique.
-Nous avons besoin de votre aide pour les départager et ainsi avantager votre université au sujet d'un tout nouveau métal appelé ``palindronium''.
 
-Votre mission est d'optimiser la production de palindronium dans votre université, production pour l'instant très coûteuse.
-Pour l'optimiser, le métal doit être fabriqué dans un moule d'une forme d'un triangle rectangle dont la longueur de l'hypoténuse est un nombre entier et un palindrome.
-Par souci d'espace, vous ne pouvez modéliser qu'un seul moule, et celui-ci doit pouvoir rentrer dans un carré de taille $n \times n$, il doit ainsi avoir une aire maximale.
+A debate has started between the students of UMons and UCLouvain.
+They can't decide on the best of the two universities, especially in the sciences.
+They need your help to decide and advantage your university on the subject of a brand new metal called ``palindronium''.
 
-Un nombre est un palindrome s'il ne change pas lorsqu'il est lu de gauche à droite ou de droite à gauche, chiffre par chiffre.
-Par exemple, $191$ est un palindrome, mais $155$ ne l'est pas.
-Votre but est d'avoir la plus grande aire possible sous ces contraintes ! Attention cependant, on ne demande qu'à l'hypoténuse d'être entier et d'être un palindrome, les autres côtés n'ont aucune restriction.
-
-Par exemple, si le carré dans lequel votre moule doit rentrer a une taille de $12 \times 12$, vous pouvez fabriquer un moule de taille $(3,4,5)$ car $5$, l'hypothénuse, est un palindrome, ce qui donnera une aire de moule de $6$. Vous pouvez aussi faire un moule de taille $(\sqrt{105},4,11)$.
+Your mission is to optimize the production of palindronium in your university, production which is very costly at the moment.
+To optimize it, the metal must be produced in a mold of the form of a right-angled triangle who's hypotenuse is a whole number and a palindrome.
+Because of space constraints, you can only model a single mold, and it must fit in a square of size $n \times n$.
+It must thus have a maximal area.
 
 \begin{figure}[h]
 \centering
@@ -38,10 +34,9 @@ Par exemple, si le carré dans lequel votre moule doit rentrer a une taille de $
 \end{figure}
 
 \begin{Input}
-	Un entier $n$ ($1 \le n \le 10^8$) donnant la longueur des côtés du carré devant contenir le moule triangulaire.
+	An integer $n$ ($1 \le n \le 10^8$) which gives the length of the sides the square which must contain the triangular mold.
 \end{Input}
 
 \begin{Output}
-	Une ligne contenant l'aire maximale que vous pouvez obtenir avec un
-	moule, à une erreur absolue ou relative de maximum $10^{-6}$.
+	An integer which is the maximum area that you can get with a mold, with an absolute or relative error of maximum $10^{-6}$.
 \end{Output}
