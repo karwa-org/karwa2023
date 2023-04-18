@@ -5,13 +5,14 @@
 
 % optionally define variables/limits for this problem
 
-Jérôme et ses deux coéquipiers doivent se rendre aux KARWa à l'UMONS.
-Malheureusement, ils se sont trompés d'université et ont atterri à l'UCLouvain !
-Ils sont pressés par le temps et demandent à leur ami Nicolas, expert des cartes et des plus courts chemins, qui a sa disposition une carte avec $n$ gares et $m$ lignes de trains bidirectionnelles (lignes qui vont dans les deux sens), prenant chacune un temps $w$.
-Pouvez-vous déterminer s'ils auront le temps d'arriver à l'heure ?
+Jérôme and his two teammates must get to KARWa at UMons.
+Unfortunately, they made a mistake and ended up at UCLouvain!
+They don't have much time and so ask their friend Nicolas - an expert of maps and of shortest parts - who has a map with $n$ stations and $m$ bidirectional train lines each taking some time $w$.
+Can you determine if they'll arrive in time?
 
-L'UCLouvain est représentée par l'intersection $1$ et l'UMONS par l'intersection $n$.
-Un chemin est garanti entre les deux universités.
+UCLouvain is represented by the $1$ intersection and UMons by the $n$ intersection.
+A path is guaranteed between the two universities.
+
 \begin{figure}[h]
 	\centering
 	\begin{tikzpicture}[auto,node distance=2cm,thick]
@@ -38,18 +39,18 @@ Un chemin est garanti entre les deux universités.
 		% \foreach \i in {1,...,6} \node at (360/6*\i:3.5) {\i};
 		\end{tikzpicture}
 		
-\caption[short]{Exemple 1 : avec le chemin de 1 à 6 en gras}
+\caption[short]{Example 1: the path from 1 to 6 is bold}
 \end{figure}
 	
 
 \begin{Input}
-	L'entrée consiste en :
+	The input consists of :
 	\begin{itemize}
-		\item une ligne de deux entiers $n$ et $m$ ($2 \le n, m \le 10^6$), où $n$ est le nombre d'intersections et $m$ le nombre de liaisons,
-		\item $m$ lignes contenant chacune 3 entiers $u$ ($1 \le u \le n$), $v$ ($1 \le v \le n$), et $w$ ($1 \le w \le 10^6$), représentant une liaison bidirectionnelle entre $u$ et $v$, avec un poids $w$.
+		\item One line with two integers $n$ and $m$ ($2 \le n, m \le 10^6$), where $n$ is the number of intersections and $m$ is the number of connections,
+		\item $m$ lines with 3 integers each $u$ ($1 \le u \le n$), $v$ ($1 \le v \le n$), and $w$ ($1 \le w \le 10^6$), which represent a bidirectional connection between $u$ and $v$, with a time of $w$.
 	\end{itemize}
 \end{Input}
 
 \begin{Output}
-	Une ligne contenant la longueur du plus court chemin entre $1$ et $n$.
+	An integer with the length of the shortest path between $1$ and $n$.
 \end{Output}
