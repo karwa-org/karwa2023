@@ -22,7 +22,7 @@
   label: E
   name: En Retard
   rgb: '#000000'
-  time_limit: 1.0
+  time_limit: 2.0
 - id: stockagefacile
   label: F
   name: Stockage Facile
@@ -52,7 +52,7 @@
   label: K
   name: Konnectons Les Tous
   rgb: '#000000'
-  time_limit: 6.0
+  time_limit: 10.0
 - id: labyrinthe
   label: L
   name: Labyrinthe
