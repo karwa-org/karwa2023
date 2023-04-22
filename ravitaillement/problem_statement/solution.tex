@@ -12,6 +12,12 @@
                      \item $right[j]$ : la colonne la plus à droite jusqu'à laquelle on a uniquement des $1$, de $j$ à $right[j]$ (exclu).
                   \end{itemize}
         \item<+-> Initialement, $height[j]=0$, $left[j]=0$ et $right[j]=m$.
+    \end{itemize}
+\end{frame}
+
+\begin{frame}
+    \frametitle{\problemtitle}
+    \begin{itemize}
         \item<+-> Pour une ligne $i$ :
           \begin{itemize}
              \item on parcourt chaque colonne $j$, si $M_{i,j}=1$, on actualise $height[j]\leftarrow height[j]+1$, sinon on met $0$,
@@ -19,12 +25,5 @@
              \item<+-> une fois la ligne $i$ traitée, on calcule le nombre de $1$ dans une sous-matrice pour chaque colonne $j$ : \[MaxArea \leftarrow \max(MaxArea, height[j]\cdot (right[j]-left[j])).\]
           \end{itemize}
     \end{itemize}
-\end{frame}
-
-%\begin{frame}
-%    \frametitle{\problemtitle}
-%    \begin{itemize}
-
-%    \end{itemize}
     \solvestats
-%\end{frame}
+\end{frame}
