@@ -1,4 +1,6 @@
-name: Allumettes
+name:
+  en: Allumettes
+  fr: Allumettes
 author: Alexandre Dewilde
 # Contest name and year
 source: KARWa 2023

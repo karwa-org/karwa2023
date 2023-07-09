@@ -1,4 +1,6 @@
-name: En Retard
+name:
+  en: En Retard
+  fr: En Retard
 author: Alexandre Dewilde
 # Contest name and year
 source: KARWa 2023

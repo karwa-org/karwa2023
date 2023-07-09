@@ -1,0 +1,12 @@
+\begin{frame}
+    \frametitle{\problemtitle}
+    \begin{itemize}
+        % TODO: Remove this comment when you're done writing the solutions.
+        \item<+-> FR \textbf{Problème:} Déterminer le gagnant d'un jeu de Nim (cf. Wikipédia) via une stratégie gagnante.
+        \item<+-> Il suffit de calculer $n\;\mathsf{mod}\; (k + 1)$.
+        \item<+-> Si Brieuc joue et qu'il y a $m \le k$ bâton, il peut gagner en retirant tout. S'il en reste un peu plus ($k+1<m<2k+2$), il a tout intérêt à en retirer pour qu'il en laisser $k+1$ et ainsi gagner à son prochain tour, mais s'il en reste pile $k+1$, on tombera dans le cas $m\le k$ pour Aymeric.
+        \item<+-> Ce raisonnement se généralise pour retomber sur une condition de multiplicité de $k+1$.
+        \item<+-> $\mathcal O(1)$ !
+    \end{itemize}
+    \solvestats
+\end{frame}

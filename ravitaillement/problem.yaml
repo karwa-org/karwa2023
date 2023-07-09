@@ -1,4 +1,6 @@
-name: Ravitaillement
+name:
+  en: Ravitaillement
+  fr: Ravitaillement
 author: Christophe Grandmont
 # Contest name and year
 source: KARWa 2023

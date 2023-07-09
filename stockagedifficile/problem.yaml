@@ -1,4 +1,6 @@
-name: Stockage Difficile
+name:
+  en: Stockage Difficile
+  fr: Stockage Difficile
 author: Henri Devillez
 # Contest name and year
 source: KARWa 2023

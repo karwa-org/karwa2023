@@ -1,4 +1,6 @@
-name: Bonheur
+name:
+  en: Bonheur
+  fr: Bonheur
 author: Alexandre Dewilde
 # Contest name and year
 source: KARWa 2023

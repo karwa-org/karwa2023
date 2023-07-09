@@ -1,7 +1,8 @@
-contest.pdf
-contest-web.pdf
-solutions.pdf
-solutions-web.pdf
+contest.*.pdf
+contest-web.*.pdf
+solutions.*.pdf
+solutions-web.*.pdf
+*/problem.*.pdf
 *.aux
 *.fdb_latexmk
 *.fls

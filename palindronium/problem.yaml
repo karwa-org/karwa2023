@@ -1,4 +1,6 @@
-name: Palindronium Pythagoricien
+name:
+  en: Palindronium Pythagoricien
+  fr: Palindronium Pythagoricien
 author: Christophe Grandmont
 # Contest name and year
 source: KARWa 2023

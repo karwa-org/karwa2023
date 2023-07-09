@@ -1,4 +1,6 @@
-name: Labyrinthe
+name:
+  en: Labyrinthe
+  fr: Labyrinthe
 author: Alexandre Dewilde
 # Contest name and year
 source: KARWa 2023

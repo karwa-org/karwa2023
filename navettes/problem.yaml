@@ -1,4 +1,6 @@
-name: Navettes
+name:
+  en: Navettes
+  fr: Navettes
 author: Alexandre Dewilde
 # Contest name and year
 source: KARWa 2023

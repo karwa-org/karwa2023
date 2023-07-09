@@ -1,4 +1,6 @@
-name: Koalation
+name:
+  en: Koalation
+  fr: Koalation
 author: Wauters Florian
 # Contest name and year
 source: KARWa 2023

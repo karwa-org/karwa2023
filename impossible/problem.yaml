@@ -1,4 +1,6 @@
-name: Impossible
+name:
+  en: Impossible
+  fr: Impossible
 author: Aymeric Wibo
 # Contest name and year
 source: KARWa 2023
